@@ -88,7 +88,8 @@ i {
 .bg-home {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ajuste conforme necessário */
+  height: 100vh;
+  /* Ajuste conforme necessário */
   overflow: hidden;
 }
 
@@ -236,6 +237,29 @@ i {
     font-size: 14px;
   }
 }
+.services {
+  background-color: #06121e;
+  color: #fefbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
