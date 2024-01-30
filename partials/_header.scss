@@ -5,7 +5,7 @@ header{
 .header-content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 i{
@@ -51,10 +51,25 @@ i{
     width: 160px;
     display: flex;
     align-items: center;
+    top: 24px;
     justify-content: center;
     margin-top: 6px;
-    
+    animation: scaleBt 2s alternate infinite;
 }
+
+
+@keyframes scaleBt {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     .header-content{
