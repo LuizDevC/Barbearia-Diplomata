@@ -24,11 +24,6 @@ i {
   gap: 12px;
 }
 
-.header-icons a:hover i {
-  animation: translateY 1s infinite alternate;
-  color: #d34040;
-}
-
 @keyframes translateY {
   from {
     transform: translateY(0) scale(1);
@@ -39,7 +34,7 @@ i {
 }
 .header-button {
   border: 1px solid #fefbff;
-  padding: 8px 24px;
+  padding: 8px 48px;
   border-radius: 4px;
   color: #fefbff;
   background-color: transparent;
@@ -86,9 +81,6 @@ i {
     width: 160px;
     margin-top: 5px;
   }
-  .header-button {
-    display: none;
-  }
 }
 .container {
   max-width: 1440px;
@@ -108,6 +100,29 @@ i {
   display: block;
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+
+.bg-home-services {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-home-services::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.425), #06121e), url("../assets/services.jpg");
   left: 0;
   top: 0;
   width: 100%;

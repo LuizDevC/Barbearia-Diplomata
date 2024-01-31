@@ -17,13 +17,6 @@ i{
     gap: 12px;
 }
 
-.header-icons a:hover{
-    i{
-        animation: translateY 1s infinite alternate;
-        color: $red-light;
-    }
-}
-
 @keyframes translateY {
     from{
         transform: translateY(0) scale(1);
@@ -35,7 +28,7 @@ i{
 
 .header-button{
     border: 1px solid $white-light;
-    padding: 8px 24px;
+    padding: 8px 48px;
     border-radius: 4px;
     color: $white-light;
     background-color: transparent;
@@ -88,10 +81,7 @@ i{
         width: 160px;
         margin-top: 5px;
     }
-
-    .header-button{
-        display: none;
-    }
-
  
 }
+
+
